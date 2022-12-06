@@ -559,9 +559,11 @@ p {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-mail > a,
 .address-tel > a {
+  transition: color 250ms var(--timing-function);
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.71;
