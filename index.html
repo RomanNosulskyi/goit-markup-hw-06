@@ -349,7 +349,8 @@
                             </svg> 
                         </a></li>
                     </ul>
-                    <form action="" class="form-mailing" autocomplete="off">
+        </section>
+        <form action="" class="form-mailing" autocomplete="off">
                       <p>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
                     <div class="mailing-thumb">
                       <div class="field-mailing">
@@ -363,7 +364,6 @@
                       </button>
                     </div>
                     </form>
-        </section>
       </div>
     </footer>
     <div class="modal-backdrop is-hidden" data-modal>
@@ -380,41 +380,42 @@
       <input type="text" id="name" class="input" name="name">
     </input>
     <svg class="input-svg">
-          <use href=""></use>
+          <use href="./images/symbol-defs.svg#icon-person-form"></use>
     </svg>
     </div>
     <div class="inputs-field">
-      <label for="">Телефон</label>
-      <input type="text">
+      <label for="tel">Телефон</label>
+      <input class="input" type="tel" id="tel" name="tel">
     </input>
     <svg class="input-svg">
-          <use></use>
+          <use href="./images/symbol-defs.svg#icon-phone-form"></use>
     </svg>
     </div>
     <div class="inputs-field">
-      <label for="">Пошта</label>
-      <input type="text">
+      <label for="email">Пошта</label>
+      <input class="input" type="email" id="email" name="email">
     </input>
     <svg class="input-svg">
-          <use></use>
+          <use href="./images/symbol-defs.svg#icon-email-form"></use>
     </svg>
     </div>
     <div class="inputs-field">
       <label for="comment">Коментар</label>
-      <textarea name="comment" id="comment cols="30" rows="10" placeholder="Введіть текст"></textarea>
+      <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
     </div>
     <div class="agreement-field">
-      <input type="text">
-      <svg>
-        <use></use>
+      <input class="visually-hidden" type="checkbox" name="accept" id="agreement-checkbox">
+      <svg class="no-accept">
+        <use href="./images/symbol-defs.svg#icon-no-accept"></use>
       </svg>
-      <svg>
-        <use></use>
+      <svg class="accept">
+        <use href="./images/symbol-defs.svg#icon-accept"></use>
       </svg>
-      <label for="">Погоджуюся з розсилкою та приймаю <a class="agreement-link" href="">Умови договору</a></label>
+      <label for="agreement-checkbox">
+              Погоджуюся з розсилкою та приймаю <a class="agreement-link" href="">Умови договору</a>
+            </label>
     </div>
-    <button class="btn-primary form-btn" type="submit"></button>
-  </div>
+    <button class="btn-primary form-btn" type="submit">Відправити</button>
 </div>
 	 </div>
 	 <script src="./js/modal.js"></script>
