@@ -370,13 +370,13 @@
     <div class="modal-backdrop is-hidden" data-modal>
 <div class="modal">
 	<button class="close-sign" data-modal-close>
-		<svg class="vector" width="18" height="18">
+		<svg class="vector" width="11" height="11">
 			<use href="./images/symbol-defs.svg#icon-close"></use>
 		</svg>
 	</button>
   <p>Залиште свої дані, ми вам передзвонимо</p>
-  <div class="inputs">
-    <div class="inputs-field">
+  <form action="" class="inputs">
+      <div class="inputs-field">
       <label for="name">Ім'я</label>
       <input type="text" id="name" class="input" name="name">
     </input>
@@ -405,19 +405,14 @@
       <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
     </div>
     <div class="agreement-field">
-      <input class="visually-hidden" type="checkbox" name="accept" id="agreement-checkbox">
-      <svg class="no-accept">
-        <use href="./images/symbol-defs.svg#icon-no-accept"></use>
-      </svg>
-      <svg class="accept">
-        <use href="./images/symbol-defs.svg#icon-accept"></use>
-      </svg>
-      <label for="agreement-checkbox">
+      <label for="agreement-checkbox" class="label">
+            <input class="checkbox" type="checkbox" name="accept" id="agreement-checkbox">
+              <span class="checkbox-icon"></span>
               Погоджуюся з розсилкою та приймаю <a class="agreement-link" href="">Умови договору</a>
             </label>
     </div>
     <button class="btn-primary form-btn" type="submit">Відправити</button>
-</div>
+  </form>
 	 </div>
 	 <script src="./js/modal.js"></script>
   </body>
